@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: #dde1e7; */
+    background-color: #BB2CD9;
+}
+.container{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.new{
+    height: 300px;
+    width: 300px;
+    background: #BB2CD9;
+    box-shadow: inset -3px -3px 5px #ffffff20, 3px 3px 15px #00000050;
+    border-radius: 23px;
+    text-align: center;
+    /* padding: 37 0px; */
+    padding-top: 30px;
+}
+.new h3{
+    padding-bottom: 15px;
+    color: #FFF222;
+}
+.new p{
+    color: #fff;
+}
