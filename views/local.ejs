@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Local File</title>
+    <style>
+        body{
+            background-color: #313131;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-white text-center">
+        <h1 class="display-4 my-5">Local File</h1>
+        <button class="btn btn-warning ml-5">Button</button>
+        <a class="btn btn-warning ml-5" href="/">Go to home page</a>
+
+
+        <div class="card text-dark text-left" style="width: 18rem;">
+            <img class="card-img-top"
+                src="<%= typeof filename == 'undefined' ? 'https://images.pexels.com/photos/1144256/pexels-photo-1144256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350' : filename%>"
+                alt="Card image cap"
+            >
+            <div class="card-body">
+
+                <h5 class="card-title">Multer File Uploader</h5>
+                <p class="card-text">Multer is a file/image uploader, used a lot with node application. It's really simple to use.</p>
+
+                <form class="" action="/upload" method="POST" enctype="multipart/form-data">
+                    <div class="custom-file">
+                        <input type="file" name="profilepic" class="custom-file-input" id="validatedCustomFile" required>
+                        <label class="custom-file-label" for="validatedCustomFile">
+                            <%= typeof filename == 'undefined'? 'Your File' : filename %>
+                        </label>
+                        <p class="red">
+                            <%= typeof message == 'undefined'? '' : message %>
+                        </p>
+                    </div>
+                    <br />
+                    <button type="submit" class="btn my-4 btn-primary gap">Submit</button>
+                    <a href="/" class="btn btn-success gap ml-3">Go Back</a>
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

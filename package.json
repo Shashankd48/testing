@@ -1,0 +1,20 @@
+{
+  "name": "learning-multer",
+  "version": "1.0.0",
+  "description": "In this Project we are learning multer a node package for file upload",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shashasnk",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
